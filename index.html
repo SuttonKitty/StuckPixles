@@ -8,6 +8,10 @@
     </head>
 
     <body>
+        <div class="loadingScreen">
+	      <img src="assets/loading.png">
+	    </div>
+
         <div id="main">
             <div>
                 <b>
@@ -225,7 +229,12 @@
             </div>
         </div>
 
-        
+        <script type="text/javascript">
+	    	var loadingScreen = document.querySelector(".loadingScreen");
+	    	window.addEventListener('load', function() {
+			  loadingScreen.style.display = 'none';
+			})
+	    </script>
     </body>
 </html>
 
