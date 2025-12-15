@@ -14,29 +14,6 @@ body {
     cursor: crosshair;
 }
 
-.loadingScreen {
-  position: absolute;
-  z-index: 5;
-  width: 10%;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.loadingScreen img {
-  animation: rotateForever 20s linear infinite;
-}
-
-@keyframes rotateForever {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 #main {
     width: auto;
     display: flex;
