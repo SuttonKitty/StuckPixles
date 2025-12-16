@@ -111,7 +111,11 @@ body {
 #content {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
+}
+
+#intro {
+    padding-bottom: 0.5rem;
 }
 
 .card {
