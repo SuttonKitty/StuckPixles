@@ -6,7 +6,6 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: monospace;
-    /* background-color: #FCF5EE; */
     background-color:#F7F7F2;
     scroll-behavior: smooth;
     font-size: 0.8rem;
@@ -14,8 +13,40 @@ body {
     cursor: crosshair;
 }
 
-#main {
-    width: auto;
+#loader {
+    position: fixed;
+    inset: 0;
+    background-color: #F7F7F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    font-family: monospace;
+}
+
+.spinner {
+    width: 32px;
+    height: 32px;
+    border: 2px solid #ccc;
+    border-top: 2px solid #FF6235;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.loading-text {
+    font-size: 0.8rem;
+    color: gray;
+    letter-spacing: 0.05em;
+}
+
+.main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -76,10 +107,6 @@ body {
     color: gray;
 }
 
-/* #intro {
-    padding-bottom: 1rem;
-} */
-
 #content {
     display: flex;
     flex-direction: column;
@@ -113,12 +140,13 @@ body {
 }
 
 
-@media (min-width: 750px) { /* desktop */
-    #main {
+@media (min-width: 750px) {
+    .main {
         padding: 2rem;
         width: 50%;
         gap: 3rem;
         font-size: 1rem;
+        justify-content: center;
     }
 
     #title {
@@ -126,7 +154,6 @@ body {
     }
 
     #content {
-        /* padding-left: 2rem; */
         text-align: justify;
         gap: 3rem;
     }
@@ -138,7 +165,6 @@ body {
     .card-top {
         gap: 2rem;
     }
-    
     
     .pics img {
         border-radius: 0.5rem;
