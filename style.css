@@ -126,10 +126,6 @@ body {
     gap: 1rem;
 }
 
-.number {
-    color: gray;
-}
-
 .pics img {
     width: 100%;
     border-radius: 0.3rem;
