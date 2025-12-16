@@ -156,11 +156,12 @@ body {
 
     #content {
         text-align: justify;
-        gap: 3rem;
+        gap: 2rem;
     }
     
     .card {
         gap: 1rem;
+        padding-bottom: 1rem;
     }
     
     .card-top {
