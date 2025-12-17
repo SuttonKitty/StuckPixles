@@ -8,7 +8,7 @@ body {
     font-family: monospace;
     background-color:#F7F7F2;
     scroll-behavior: smooth;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #03191E;
     cursor: crosshair;
 }
